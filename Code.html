@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Yuan Feng</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the color of the text -->
+          <h1><a href="index.html">Yuan Feng</a></h1>
+          <h2>Computational Mechanics, Ph.D. Candidate, UC Davis</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="index.html">Home</a></li>
+          <li class="selected"><a href="Code.html">Code</a></li>
+          <li><a href="Publication.html">Publication</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    
+    
+    <div id="site_content">
+      <div id="banner"></div>
+
+<!-- 	  <div id="sidebar_container"> -->
+<!--         <div class="sidebar"> -->
+<!--           <div class="sidebar_top"></div> -->
+<!--  -->
+<!--           <div class="sidebar_item"> -->
+<!--             <h3>Latest News</h3> -->
+<!--             <h4>New Website Launched</h4> -->
+<!--             <h5>February 1st, 2014</h5> -->
+<!--             <p>2014 sees the rede.<br /><a href="#">Read more</a></p> -->
+<!--           </div> -->
+<!--  -->
+<!--           <div class="sidebar_base"></div> -->
+<!--         </div> -->
+<!--         <div class="sidebar"> -->
+<!--           <div class="sidebar_top"></div> -->
+<!--           <div class="sidebar_item"> -->
+<!--             <h3>Useful Links</h3> -->
+<!--             <ul> -->
+<!--               <li><a href="#">link 1</a></li> -->
+<!--               <li><a href="#">link 2</a></li> -->
+<!--               <li><a href="#">link 3</a></li> -->
+<!--               <li><a href="#">link 4</a></li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--           <div class="sidebar_base"></div> -->
+<!--         </div> -->
+<!--         <div class="sidebar"> -->
+<!--           <div class="sidebar_top"></div> -->
+<!--           <div class="sidebar_item"> -->
+<!--             <h3>Search</h3> -->
+<!--             <form method="post" action="#" id="search_form"> -->
+<!--               <p> -->
+<!--                 <input class="search" type="text" name="search_field" value="Enter keywords....." /> -->
+<!--                 <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" /> -->
+<!--               </p> -->
+<!--             </form> -->
+<!--           </div> -->
+<!--           <div class="sidebar_base"></div> -->
+<!--         </div> -->
+<!--       </div> -->
+
+
+      <div id="content">
+
+
+
+        <h1>Particle System</h1>
+
+        <h4>Smoothed-particle hydrodynamics (SPH)</h4>
+          <p>
+            Smoothed-particle hydrodynamics (SPH) is a particle-based computational method used for simulating the dynamics of continuum media.
+            A header-only implementation was implemented and it is 
+            <a href="https://github.com/yuan-feng/SPH" target="_blank" rel="noopener">available on GitHub</a>.
+          </p>
+        
+          <br>
+
+        <h4>Particle in cell (PIC/FLIP)</h4>
+          <p>
+            Particle in cell (PIC/FLIP) is a grid-based computational method used for simulating the dynamics of continuum media.
+            PIC/FLIP will be available after some publication.
+          </p>
+
+          <br>          
+
+        <h4>Material Point Method (MPM)</h4>
+          <p>
+            Material Point Method (MPM) is a numerical technique used to simulate the behavior of solids, liquids, gases, and any other continuum material.
+            MPM is also a grid-based computational method. This grid makes suitable to simulation multi-phase and multi-material interactions.
+            MPM code will be available after some publication.
+          </p>
+
+          <br>  
+
+        <h1>Finite Element Method</h1>
+        <h4>Large deformation finite element method (FEM)</h4>
+          <p>
+            In the past three years, the author programs finite element method heavily inside 
+            <a href="http://real-essi.info/" target="_blank" rel="noopener">Real-ESSI simulator.</a>.
+            The coding experiences cover almost all aspects of FEM, from constitutive modeling, element technique, to solution methods and stability.
+            However, Real-ESSI simulator is not open-source yet.
+            After the graduation, the author will start programming a different FEM framework from the latest numerical libraries.
+          </p>
+          <br>  
+
+        <h4>Finite Element Method with Beams </h4>
+          <p>
+            This is a 3D finite element method for beams written in Matlab.
+            The code is 
+            <a href="https://github.com/yuan-feng/FEM-beam" target="_blank" rel="noopener">available on GitHub</a>.
+          </p>          
+          <br>  
+
+        <h1>Machine Learning </h1>
+        <h4>Alpha Zero Reinforcement Learning for Gomoku</h4>
+          <p>
+            The 
+            <a href="https://www.nature.com/articles/nature24270" target="_blank" rel="noopener"> Alpha-zero algorithm </a>
+            is amazingly faster and more effective than the original AlphaGo algorithm.
+            However, the algorithm is still computationally expensive for community desktops. 
+            The author implemented the Alpha-zero algorithms for Gomoku.
+          </p>
+          <br>  
+
+        <h1>Numerical Library</h1>
+        <h4>Small Tensor Library (Einstein Notation)</h4>
+          <p>
+            Small tensor operations are widely used in computational mechanics. 
+            The author implemented a header-only small tensor library 
+            with in-built template meta-programming engine
+            such that the required memory size is determined at compile time. 
+            In this way, the dynamic heap allocation is avoided and the engine can always allocate exactly
+            the right amount of stack memory required.
+            In addition, the tensor library supports Einstein Notations for user's convenience.
+            The code is 
+            <a href="https://github.com/yuan-feng/small_tensor.git" target="_blank" rel="noopener">available on GitHub</a>.
+          </p>
+          <br>  
+
+        <h4>Small Tensor Library (Automatic Differentiation)</h4>
+          <p>
+            Automatic differentiation (AD), also called algorithmic differentiation or computational differentiation, is a set of techniques to numerically evaluate the derivative of a function specified by a computer program.
+            AD is between symbolic differentiation and 
+            numerical differentiation (the method of finite differences).
+            In this library, AD is implemented in the tensor level and the code is 
+            <a href="https://github.com/yuan-feng/small_tensor_AD.git" target="_blank" rel="noopener">available on GitHub</a>.
+          </p>
+          <br>  
+
+        <h4>Tensor Derivative Library (Symbolic)</h4>
+          <p>
+            For a complicated/realistic constitutive model, the derivative of the tensor function can be quite complicated.
+            The symbolic tensor derivative framework designed for the elastoplastic algorithm is implemented in 
+            Mathematica.
+            The implementation and examples are 
+            <a href="https://github.com/yuan-feng/symbolic_tensor_derivative.git" target="_blank" rel="noopener">available on GitHub</a>.
+          </p>
+          <br>  
+
+        
+
+        <h1>Wave Propagation</h1>
+
+        <h4>1D and 3x1D inhomogeneous Wave Propagation</h4>
+          <p>
+            Earthquakes waves are usually measured at the surface.
+            The earthquake waves at the bedrock are required for the 
+            soil-structure interaction simulation.
+            This implementation is able to do convolution and deconvolution 
+            across the inhomogeneous layers of different material properties. 
+            FFT and the analytical solutions in the frequencies domain is used.
+            The implementation and examples are 
+            <a href="https://github.com/yuan-feng/Wave_Propagation.git" target="_blank" rel="noopener">available on GitHub</a>.
+          </p>
+          <br>  
+
+        <h4>Domain Reduction Method</h4>
+          <p>
+            <a href="http://www.academia.edu/download/42379198/Domain_reduction_method_for_three-dimens20160208-25907-189yhnm.pdf" target="_blank" rel="noopener">Domain Reduction Method</a>
+            a modular finite-element methodology for modeling earthquake 
+            ground motion in highly heterogeneous localized regions with 
+            large contrasts in wavelengths.
+            Domain reduction method was implemented in Real-ESSI and can be used
+            with the 
+            <a href="https://github.com/yuan-feng/Wave_Propagation.git" target="_blank" rel="noopener">wave propagation</a> directly.
+          </p>
+          <br>  
+
+        <h1>Solid Constitutive Modeling</h1>
+
+        <h4>Multi-surface Plasticity</h4>
+          <p>
+            <a href="https://www.sciencedirect.com/science/article/pii/0261727785900300" target="_blank" rel="noopener">Multi-surface material model</a>
+            is used describe the elastoplastic behavior accurately, especially 
+            for matching the field measurement.
+            Three yield surfaces were implemented for the multi-surface-material model: von-Mises, Drucker-Prager, and rounded-Mohr-Coulomb yield surfaces.
+          </p>
+          <br>  
+
+        <h4>Cosserat Plasticity</h4>
+          <p>
+            Cosserat theory, also called micro-polar elasticity, is a augmented elasticity
+            theory, where the micro-rotation (spin) is considered.
+            The Cosserat elasticity and plasticity are implemented.
+            The code will be available after some publication.
+          </p>
+          <br>  
+
+        <h4>Various Drucker-Prager Material Model</h4>
+          <p>
+            Drucker-Prager is used for pressure-dependent material model.
+            There are various modified versions of Drucker-Prager materials, 
+            like hyperbolic and tension hardening. 
+            The code will be available after some publication.
+          </p>
+          <br>  
+
+        <h1>High Performance Computing</h1>
+        <h4>Asynchronous Writer Prototype with TBB (shared memory)</h4>
+          <p>
+            Asynchronous writing with TBB saves 40 percent of time in some cases.
+            The Asynchronous Writer Prototype is 
+            <a href="https://github.com/yuan-feng/async_writer.git" target="_blank" rel="noopener">available on GitHub</a>.
+          </p>
+          <br>  
+        <h4>Actor Model Prototype with MPI (distributed memory)</h4>
+           <p>
+             Actor model is a mathematical model for distributed computing.
+             The Actor model prototype (implemented with 
+             <a href="https://en.wikipedia.org/wiki/Message_Passing_Interface.git" target="_blank"   rel="noopener">MPI</a>).
+             is 
+             <a href="https://github.com/yuan-feng/Wave_Propagation.git" target="_blank"   rel="noopener">available on GitHub</a>.
+           </p>
+           <br>  
+
+        <h1>Miscellaneous </h1>
+        <h4>A lock-free multi-thread Web Crawler</h4>
+          <p>
+            The lock-free multi-thread web crawler 
+            uses BeautifulSoup4 to process the web-page,
+            and uses redis to save and read the index-page.
+            The code is 
+            <a href="https://github.com/yuan-feng/Wave_Propagation.git" target="_blank"   rel="noopener">available on GitHub</a>.
+          </p>
+          <br>  
+
+        <h4>Benchmark Preconditioning</h4>
+          <p>
+            Subspace projection methods (CG and GMRES) provide very nice iterative algorithms to solve symmetric and non-symmetric linear systems respectively. But they often suffer from low convergence rate. Preconditioning provides a way to address this issue. The basic idea is to use the Krylov subspace method on a modified system. This study focus on comparing performance of different preconditioning techniques starting from the simpler ones to more complicated ones on GMRES and CG methods.
+          </p>
+          <br>  
+
+
+        <!-- <h2>Browser Compatibility</h2> -->
+        <!-- <p>This template has been tested in the following browsers:</p> -->
+        <!-- <ul> -->
+          <!-- <li>Internet Explorer 9</li> -->
+          <!-- <li>FireFox 25</li> -->
+          <!-- <li>Google Chrome 31</li> -->
+        <!-- </ul> -->
+      </div>
+
+    </div>
+
+
+    <div id="content_footer"></div>
+    <div id="footer">
+
+      <p><a href="index.html">Home</a> | 
+         <a href="Code.html">Code</a> | 
+         <a href="Publication.html">Publication</a> | 
+         <a href="Gallery.html">Gallery</a>
+      </p>
+      
+      <p>Copyright &copy; Yuan Feng  
+        <!-- | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> |  -->
+        <!-- <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> |  -->
+        <!-- <a href="http://www.html5webtemplates.co.uk">HTML5 Web Templates</a> -->
+      </p>
+    </div>
+    </div>
+
+</body>
+</html>
